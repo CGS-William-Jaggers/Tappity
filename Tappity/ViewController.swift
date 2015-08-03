@@ -7,13 +7,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // Instance variables
     var score = 0
     var timeRemaining = 30
     var timerRunning = false
 
+    // IBOutlets
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timeRemainingLabel: UILabel!
 
+    // Called when a colored button is tapped
     @IBAction func buttonTapped(sender: UIButton) {
 
         score++
@@ -32,6 +35,7 @@ class ViewController: UIViewController {
 
     }
 
+    // Called each time the NSTimer ticks (every second)
     func timerTick(sender: NSTimer) {
 
         timeRemaining--
