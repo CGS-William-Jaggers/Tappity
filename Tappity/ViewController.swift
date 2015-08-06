@@ -9,7 +9,7 @@ class ViewController: UIViewController {
 
     // Instance variables
     var score = 0
-    var timeRemaining = 30
+    var timeRemaining = 15
     var timerRunning = false
 
     // IBOutlets
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
 
             let dismissAlertAction = UIAlertAction(title: "Dismiss", style: .Default, handler: {
                 (alert: UIAlertAction!) -> Void in
-                self.timeRemaining = 30
+                self.timeRemaining = 15
                 self.score = 0
                 self.scoreLabel.text = "0"
                 self.timeRemainingLabel.text = "30"
