@@ -12,6 +12,16 @@ class ViewController: UIViewController {
     
     // Instance variables
     // New Comment Here
+    //Change background color
+    func changeColor() {
+        
+        var colorArray = [UIColor.blackColor(), UIColor.brownColor(), UIColor.blueColor(), UIColor.darkGrayColor(), UIColor.greenColor(), UIColor.redColor(), UIColor.magentaColor(), UIColor.lightGrayColor(), UIColor.purpleColor(), UIColor.blackColor(), UIColor.orangeColor()]
+        
+        var randomIndex = Int(arc4random_uniform(9) + 1)
+        
+        view.backgroundColor = colorArray[randomIndex]
+    }
+    
     var score = 0
     var timeRemaining = 15
     var timerRunning = false
